@@ -3,15 +3,36 @@ body {
   color: #434455;
   background-color: #fff;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
 }
+/* container */
 
+.container {
+  min-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* header */
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -25,24 +46,28 @@ a {
 .header-logo .logo-part {
   color: #2e2f42;
 }
-
-.footer-logo .logo-part {
-  color: #f4f4fd;
+.header-logo {
+  padding: 24px 0;
+  margin-right: 76px;
 }
 
-.page-footer {
-  background-color: #2e2f42;
+.header-container {
+  display: flex;
+  align-items: center;
 }
-
-.footer-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #f4f4fd;
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .nav-link {
+  padding: 24px;
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -59,22 +84,43 @@ a {
 
 .contacts {
   font-style: normal;
+  margin-left: auto;
 }
 
 .contacts-link {
+  display: block;
+  padding: 24px 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
 }
-
+.contacts-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
 .contacts-link:hover,
 .contacts-link:focus {
   color: #404bbf;
 }
 
+/* subtitle */
+
 .order {
   background-color: #2e2f42;
+}
+.order-container {
+  width: 1440px;
+  height: 601px;
+  padding-top: 188px;
+  padding-bottom: 472px;
+}
+.order-text {
+  width: 496px;
+  height: 120px;
+  align-items: center;
+  margin: 0 auto 48px;
 }
 .order-button {
   font-family: 'Roboto', sans-serif;
@@ -86,7 +132,11 @@ a {
   background-color: #4d5ae5;
   cursor: pointer;
 }
-
+.order-button {
+  display: block;
+  margin: 48px auto 0;
+  padding: 16px 32px;
+}
 .order-button:hover,
 .order-button:focus {
   background: #404bbf;
@@ -101,6 +151,20 @@ a {
   color: #fff;
   background-color: #2e2f42;
 }
+.order-text {
+  box-sizing: border-box;
+}
+
+/* Benefits */
+
+.item-container {
+  display: flex;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .item-title {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -108,6 +172,7 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin: 8px;
 }
 
 .item-text {
@@ -117,7 +182,11 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding: 8px;
 }
+
+/* team */
+
 .team {
   background-color: #f4f4fd;
 }
@@ -155,6 +224,8 @@ a {
   color: #434455;
 }
 
+/* portfolio */
+
 .portfolio-title {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
@@ -180,4 +251,25 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+.app-name {
+  text-transform: capitalize;
+}
+
+/* footer */
+
+.footer-logo .logo-part {
+  color: #f4f4fd;
+}
+
+.page-footer {
+  background-color: #2e2f42;
+}
+
+.footer-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
 }
